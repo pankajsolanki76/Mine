@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Cake Cutting Celebration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body id="chapter3">
+    <div class="story-page">
+        <h2>I Love You💗</h2>
+        <div class="story-chapter" id="chapter3">
+           
+            <div class="cake-cutting">
+                <img src="https://img.freepik.com/premium-photo/birthday-pink-cake-decorated-pink-background-big-birthday-cake-with-pink-cream-toppings_667286-3440.jpg" alt="Birthday Cake" class="cake">
+                <button id="cutCakeBtn">Cut the Cake!</button>
+                <div id="message" class="hidden">🎉 Happy Birthday! 🎉</div>
+            </div>
+
+            
+            <div id="balloonContainer" class="hidden"></div> <!-- Balloon container -->
+        </div>
+        <a href="chapter4.html" class="next-button">Click Me </a>
+    </div>
+
+    <audio id="birthdaySong" src="audio\birthday_song.mp3.m4a"></audio> <!-- Link to birthday song -->
+    
+    <script>
+        document.getElementById("cutCakeBtn").addEventListener("click", function() {
+            const birthdaySong = document.getElementById("birthdaySong");
+            birthdaySong.play();
+            document.getElementById("message").classList.remove("hidden");
+        });
+    </script> <!-- Link to JavaScript file -->
+</body>
+</html>
